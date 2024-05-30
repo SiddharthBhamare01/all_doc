@@ -1,0 +1,29 @@
+<!-- employee.component.html -->
+<div>
+    <button (click)="getAllEmps()">Get All Employees</button>
+  </div>
+  <div>
+    <label for="employeeId">Employee ID:</label>
+    <input type="text" id="employeeId" #empId>
+    <button (click)="getEmpById(empId.value)">Get Employee by ID</button>
+  </div>
+  <div>
+    <h2>All Employees</h2>
+    <ul *ngIf="employees">
+      <li *ngFor="let employee of employees">
+        {{ employee.employeeName }} - {{ employee.employeeId}}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="selectedEmployee">
+    <h2>Selected Employee</h2>
+    <p>Name: {{ selectedEmployee.employeeName }}</p>
+    <p>ID: {{ selectedEmployee.employeeId }}</p>
+    <!-- Display other employee details here -->
+  </div>
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+console.log('typescript Intro');
+// let salary: number=10.8;
+// console.log(salary);
+// salary=12.50;
+// console.log(salary);
+// salary='abc';
+// console.log(salary);
+var addNums = function (a, b) { return a + b; };
+var sum = addNums(10, 20);
+console.log(sum);

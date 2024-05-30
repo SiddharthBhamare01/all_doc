@@ -1,0 +1,12 @@
+<h1>Profile</h1>
+
+<div>
+    <form (ngSubmit)="onSubmit()">
+        <input type="text" name="username" placeholder="Username" [(ngModel)]="profile.name" required>
+        <input type="number" name="age" placeholder="Age" [(ngModel)]="profile.age" required>
+        <input type="text" name="aadhar" placeholder="Aadhar" [(ngModel)]="profile.aadhar" required>
+        <!-- <button (click) ="onSubmit()> submit</button> -->
+        <input type="button" (click) = "onSubmit() " value="submit"/>
+    </form>
+    <div>{{postprofile}}</div>
+</div>

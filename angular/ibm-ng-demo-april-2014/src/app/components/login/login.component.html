@@ -1,0 +1,14 @@
+<h1>Login Component</h1>
+<p>login works!</p>
+
+<div>
+    <form>
+        <input type="text" name="username" [(ngModel)]="loginData.username" />
+        <br />
+        <input type="password" name="password" [(ngModel)]="loginData.password" />
+        <br />
+        <input type="button" (click)="submitLogin()" value="Login" />
+    </form>
+    <p>{{postLoginMessage}}</p>
+</div>
+
